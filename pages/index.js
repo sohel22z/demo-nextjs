@@ -13,7 +13,7 @@ function index() {
     return (
         <>
             <Navbar />
-            <Container maxWidth="sm" className='triangle-left'></Container>
+               <Container className='triangle-left' sx={{ display: { xs: 'none' } }}> </Container>
             <Container fixed>
                 <Box mt={8} sx={{ textAlign: 'center' }}>
     
