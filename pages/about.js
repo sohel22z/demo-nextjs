@@ -1,24 +1,30 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
 import Navbar from '/components/Navbar'
 import Button from '/components/Button'
-import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
+import { Container } from '@material-ui/core';
+import { Typography } from '@mui/material';
+import Breadcrumbs from '/components/Breadcrumbs'
 
 export default function BasicGrid() {
     return (
         <>
             <Navbar />
-            <h1 sx={{ textAlign: 'center' }}> This is About page. </h1>
+            <Container>
+                <Typography variant='h4' sx={{ my: 2, }}>
+                    <h2 className='text-line'>About</h2>
+                </Typography>
+                <Breadcrumbs />
+                <Grid className='round-container' container sx={{ my: 2 }}>
+                    <Grid md={4} sx={{ mx: 4, my: 5, color: 'white' }}>
+                        <Typography sx={{ textAlign: 'left' }} variant='h3'>
+                            <h6> Are you keen to hire and partner with a veteran mobile app development company in Belgium? </h6>
+                        </Typography>
+                    </Grid>
+                    <Grid md={6} sx={{ my: 4, color: 'white', textAlign: 'left', }}>
+                    </Grid>
+                </Grid>
+            </Container>
             <Button />
         </>
     );
