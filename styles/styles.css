@@ -89,7 +89,7 @@ body {
      color: black;
     background: white;
   }
-  .nav-menu li {
-    padding-block-start: 14px;
+ .nav-menu li {
+    padding: 8px;
   }
 }
