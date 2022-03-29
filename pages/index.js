@@ -13,11 +13,12 @@ function index() {
     return (
         <>
             <Navbar />
+            <Container maxWidth="sm" className='triangle-left'></Container>
             <Container fixed>
                 <Box mt={8} sx={{ textAlign: 'center' }}>
-                    <Typography variant="h4" component="div" gutterBottom>
+                    <Typography className='bold-header-text' variant="h4" component="div" gutterBottom>
                         Creating great IT Services & Software solutions for enterprises & startups! </Typography>
-                    <Typography variant="subtitle1" color="text.secondary" component="div" gutterBottom>
+                    <Typography className='normal-text' variant="subtitle1" color="text.secondary" component="div" gutterBottom>
                         A company based in Belgium, Germany. Eureca Apps strives to redefine your mobile app experience and deliver the best
                         products in a fast pacing world with the best passionate people in our team.
                     </Typography>
@@ -31,7 +32,7 @@ function index() {
                                     component="img" height="250" image="https://www.eurecaapps.com/assets/img/CaseStudy/Donaghmore.jpg"
                                     alt="" />
                                 <CardContent className='box-size'>
-                                    <Typography sx={{ mt: 1, }} gutterBottom variant="h5" component="div">
+                                    <Typography className='normal-texts' sx={{ mt: 1, }} gutterBottom variant="h6" component="div">
                                         Augmented Reality Apps for Museum </Typography>
                                     <Typography variant="body2" color="text.secondary">
                                         From Gaming to bringing a centuries-old heirloom piece to life! We at Eureca develop apps to get real-life experiences
@@ -41,6 +42,7 @@ function index() {
                             </CardActionArea>
                         </Card>
                     </Grid>
+
                     <Grid item xs={12} sm={6}>
                         <Card sx={{ maxWidth: 500, }}>
                             <CardActionArea>
@@ -48,7 +50,7 @@ function index() {
                                     component="img" height="250"
                                     image="https://www.eurecaapps.com/assets/img/CaseStudy/KeepAppy.jpg" alt="" />
                                 <CardContent className='box-size'>
-                                    <Typography sx={{ mt: 2, }} gutterBottom variant="h5" component="div">
+                                    <Typography className='normal-texts' sx={{ mt: 2, }} gutterBottom variant="h6" component="div">
                                         Mental and health care apps </Typography>
                                     <Typography variant="body2" color="text.secondary">
                                         Personal Health Care is the need of the hour. Eureca Apps develops apps that help in promoting positivity; emotionally,
@@ -57,6 +59,7 @@ function index() {
                             </CardActionArea>
                         </Card>
                     </Grid>
+
                     <Grid item xs={12} sm={6}>
                         <Card sx={{ maxWidth: 500, float: 'right' }}>
                             <CardActionArea>
@@ -64,7 +67,7 @@ function index() {
                                     component="img" height="250" image="https://www.eurecaapps.com/assets/img/CaseStudy/mosaic.jpg"
                                     alt="" />
                                 <CardContent className='box-size'>
-                                    <Typography sx={{ mt: 2, }} gutterBottom variant="h5" component="div">
+                                    <Typography className='normal-texts' sx={{ mt: 2, }} gutterBottom variant="h6" component="div">
                                         Educational Apps for Parents & Teachers </Typography>
                                     <Typography variant="body2" color="text.secondary">
                                         To synchronize parents and educators with each other and get the child’s real-time update at school or daycare instantaneously, We develop educational apps for simultaneous work in such a busy world.
@@ -73,6 +76,7 @@ function index() {
                             </CardActionArea>
                         </Card>
                     </Grid>
+
                     <Grid item xs={12} sm={6}>
                         <Card sx={{ maxWidth: 500, }}>
                             <CardActionArea>
@@ -80,7 +84,7 @@ function index() {
                                     component="img" height="250" image="https://www.eurecaapps.com/assets/img/CaseStudy/touristguides.jpg"
                                     alt="" />
                                 <CardContent className='box-size'>
-                                    <Typography sx={{ mt: 2, }} gutterBottom variant="h5" component="div">
+                                    <Typography className='normal-texts' sx={{ mt: 2, }} gutterBottom variant="h6" component="div">
                                         Tourist guide apps
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
@@ -90,11 +94,11 @@ function index() {
                             </CardActionArea>
                         </Card>
                     </Grid>
+
                 </Grid>
-
                 <Button />
-
             </Container>
+            <Container className='triangle-right'></Container>
         </>
     )
 }

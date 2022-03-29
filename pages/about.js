@@ -18,7 +18,7 @@ export default function BasicGrid() {
     return (
         <>
             <Navbar />
-            <h1> This is About page. </h1>
+            <h1 sx={{ textAlign: 'center' }}> This is About page. </h1>
             <Button />
         </>
     );

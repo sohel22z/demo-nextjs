@@ -7,6 +7,7 @@ export default function MyApp({ Component, pageProps }) {
     return (
         <>
             <Head>
+                <title>IT Services & Software Solution – EurecaApps</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
                 <script defer src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
             </Head>
