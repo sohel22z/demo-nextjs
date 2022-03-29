@@ -7,7 +7,7 @@ export default function contact() {
   return (
     <>
       <Navbar />
-      <h1> This is contact page. </h1>
+      <h1 sx={{ textAlign: 'center' }}> This is contact page. </h1>
       <Button />
     </>
   )
