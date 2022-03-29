@@ -9,8 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image';
-import logo from '../assets/images/favicon.ico';
-import logo2 from '../assets/images/logo.svg';
+import logo from '../assets/images/logo.png';
 import Link from 'next/link'
 
 const ResponsiveAppBar = () => {
@@ -35,13 +34,12 @@ const ResponsiveAppBar = () => {
         <AppBar position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <Image className='img-fluid' src={logo} width={40} height={40} alt="logo" />
                     <Typography
                         variant="h6"
                         noWrap
                         component="div"
-                        sx={{ my: 3, ml: 2, display: { xs: 'none', md: 'flex' } }}
-                    > Eurecaapps
+                        sx={{ my: 1, ml: 2, display: { xs: 'none', md: 'flex' } }}
+                    > <Image className='img-fluid logo' src={logo} width={200} height={60} alt="logo" />
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
@@ -50,8 +48,9 @@ const ResponsiveAppBar = () => {
                             aria-controls="menu-appbar"
                             aria-haspopup="true"
                             onClick={handleOpenNavMenu}
-                            color="#94bbe9"
-                        > <MenuIcon />
+                            color="inherit"
+                        >
+                            <MenuIcon />
                         </IconButton>
                         <Menu
                             id="menu-appbar"
@@ -97,8 +96,9 @@ const ResponsiveAppBar = () => {
                         variant="h6"
                         noWrap
                         component="div"
-                        sx={{ mr: 2, flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-                    > <Image className='img-fluid' src={logo2} width={100} height={60} alt="logo" />
+                        sx={{ mr: 5, flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+                    > <Image sx={{ display: { xs: 'none', md: 'none' } }} className='img-fluid'
+                        src={logo} width={160} height={50} alt="logo" />
                     </Typography>
                     <Box className='nav-menu' sx={{ ml: 5, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         <li>
