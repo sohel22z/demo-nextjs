@@ -117,8 +117,8 @@ body {
 /* Media Query */
 @media only screen and (max-width: 600px) {
   .bold-header-text {
-    font-size: 2.2rem;
-    line-height: 2.3rem;
+    font-size: 35px;
+    line-height: 36.8px;
   }
 
   .nav-menu {
