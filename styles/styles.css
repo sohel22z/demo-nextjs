@@ -62,7 +62,7 @@ body {
 }
 
 .nav-menu li a:hover{
-   background: var(--color-blue2);  
+   color: var(--color-blue2);  
 }
 
 .nav-menu a {
