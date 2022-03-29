@@ -85,9 +85,10 @@ body {
   }
   .nav-menu a {
     padding-inline-start: 0px;
+     color: black;
+    background: white;
   }
   .nav-menu li {
     padding-block-start: 14px;
-    color: var(--color-blue2);
   }
 }
