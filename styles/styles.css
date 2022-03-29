@@ -58,7 +58,6 @@ body {
 }
 
 .nav-menu li a:hover {
-  color: var(--color-blue2);
   border-radius: 12px;
 }
 
