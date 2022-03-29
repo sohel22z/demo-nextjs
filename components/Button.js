@@ -7,8 +7,8 @@ import Link from 'next/link';
 const buttons = [
     <>
         <Box>
-            <Link href="/about">
-                <Button key="two">About</Button>
+            <Link href="/">
+                <Button key="two">Home</Button>
             </Link>
         </Box>
     </>
