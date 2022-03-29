@@ -32,10 +32,6 @@ body {
   background: var(--color-blue);
 }
 
-.lgo {
-  
-}
-
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -57,13 +53,12 @@ body {
   background: var(--pink-color);
 }
 
-.nav-menu li {
-  list-style: none;
+.nav-menu {
+  background: var(--color-blue);
 }
 
-.nav-menu li a:hover {
-  color: var(--color-blue2);
-  border-radius: 12px;
+.nav-menu li {
+  list-style: none;
 }
 
 .nav-menu a {
