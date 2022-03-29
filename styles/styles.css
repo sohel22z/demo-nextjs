@@ -30,6 +30,16 @@ body {
   --font-size-14: 14px;
 }
 
+.css-gtvj52 {
+color: var(--color-black3);
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 53px;
+  line-height: 57.6px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+
 .bold-header-text {
   color: var(--color-black3);
   font-family: Montserrat, Helvetica, Arial, sans-serif;
