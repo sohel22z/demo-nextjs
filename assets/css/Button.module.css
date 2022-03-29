@@ -1,0 +1,12 @@
+@import url(/styles/styles.css);
+
+.error {
+  color: white;
+  background-color: red;
+}
+
+.btn-blue {
+  background: var(--color-white);
+  color: var(--color-blue2);
+  border-radius: 10px;
+}

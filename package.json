@@ -1,0 +1,38 @@
+{
+  "name": "eurecaapps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "export": "next export",
+    "start": "next start",
+    "lint": "eslint.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@material-ui/core": "^4.12.3",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.2",
+    "@mui/styled-engine-sc": "^5.5.2",
+    "image-js": "^0.33.1",
+    "isomorphic-unfetch": "^3.1.0",
+    "jquery": "^3.6.0",
+    "lazyload": "^2.0.0-rc.2",
+    "lint": "^0.7.0",
+    "next": "^12.1.0",
+    "next-link": "^2.0.0",
+    "popper.js": "^1.16.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.16.7"
+  }
+}
