@@ -13,17 +13,16 @@ function index() {
     return (
         <>
             <Navbar />
-              <Container className='triangle-left' sx={{ display: { xs: 'none', md: 'flex' } }}></Container>
+            <Container className='triangle-left' sx={{ display: { xs: 'none', md: 'flex' } }}></Container>
+
             <Container fixed>
                 <Box mt={8} sx={{ textAlign: 'center' }}>
-    
-<Typography variant="h4" component="div" gutterBottom>
+                    <Typography variant="h4" component="div" gutterBottom>
                         <h1 className='bold-header-text'>Creating great IT Services & Software solutions for enterprises & startups! </h1> </Typography>
                     <Typography variant="subtitle1" color="text.secondary" component="div" gutterBottom>
                         <p className='normal-text'> A company based in Belgium, Germany. Eureca Apps strives to redefine your mobile app experience and deliver the best
-                        products in a fast pacing world with the best passionate people in our team. </p>
+                            products in a fast pacing world with the best passionate people in our team. </p>
                     </Typography>
-
                 </Box>
 
                 <Grid container my={2} spacing={3}>
