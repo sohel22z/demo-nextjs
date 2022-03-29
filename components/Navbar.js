@@ -39,7 +39,9 @@ const ResponsiveAppBar = () => {
                         noWrap
                         component="div"
                         sx={{ my: 1, ml: 2, display: { xs: 'none', md: 'flex' } }}
-                    > <Image className='img-fluid logo' src={logo} width={200} height={60} alt="logo" />
+                    > <Link href="/">
+                            <Image className='img-fluid' src={logo} width={200} height={60} alt="logo" />
+                        </Link>
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
@@ -50,7 +52,7 @@ const ResponsiveAppBar = () => {
                             onClick={handleOpenNavMenu}
                             color="inherit"
                         >
-                          <MenuIcon sx={{color: 'black',}} />
+                            <MenuIcon sx={{ color: 'black', }} />
                         </IconButton>
                         <Menu
                             id="menu-appbar"
@@ -70,22 +72,22 @@ const ResponsiveAppBar = () => {
                                 <Typography className='nav-menu' textAlign="center">
                                     <li>
                                         <Link href="/">
-                                            <a className='white-bold-text' sx={{ mx: 1, color: 'black', display: 'block' }}> Home </a>
+                                            <a sx={{ mx: 1, color: 'black', display: 'block' }}> Home </a>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/about">
-                                            <a className='white-bold-text' sx={{ mx: 1, color: 'black', display: 'block' }}> About </a>
+                                            <a sx={{ mx: 1, color: 'black', display: 'block' }}> About </a>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/contact">
-                                            <a className='white-bold-text' sx={{ mx: 1, color: 'black', display: 'block' }}> Contact </a>
+                                            <a sx={{ mx: 1, color: 'black', display: 'block' }}> Contact </a>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/blog">
-                                            <a className='white-bold-text' sx={{ mx: 1, color: 'black', display: 'block' }}> Blog </a>
+                                            <a sx={{ mx: 1, color: 'black', display: 'block' }}> Blog </a>
                                         </Link>
                                     </li>
                                 </Typography>
@@ -97,8 +99,10 @@ const ResponsiveAppBar = () => {
                         noWrap
                         component="div"
                         sx={{ mr: 5, flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-                    > <Image sx={{ display: { xs: 'none', md: 'none' } }} className='img-fluid'
-                        src={logo} width={160} height={50} alt="logo" />
+                    > <Link href="/">
+                            <Image sx={{ display: { xs: 'none', md: 'none' } }} className='img-fluid'
+                                src={logo} width={160} height={50} alt="logo" />
+                        </Link>
                     </Typography>
                     <Box sx={{ ml: 5, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         <li>
