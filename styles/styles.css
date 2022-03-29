@@ -82,6 +82,7 @@ body {
 @media only screen and (max-width: 600px) {
   .nav-menu {
     background: var(--color-white);
+    width: 100%;
   }
   .nav-menu a {
     padding-inline-start: 0px;
