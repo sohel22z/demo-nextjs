@@ -6,7 +6,7 @@ export default function blog() {
     return (
         <>
             <Navbar />
-            <h1>This is blog page.</h1>
+            <h1 sx={{ textAlign: 'center' }}>This is blog page.</h1>
             <Button />
         </>
     )
