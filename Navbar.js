@@ -32,7 +32,7 @@ const ResponsiveAppBar = () => {
 
     return (
         <AppBar position="static">
-            <Container maxWidth="xl">
+            <Container className='nav-menu' maxWidth="xl">
                 <Toolbar disableGutters>
                     <Typography
                         variant="h6"
@@ -70,22 +70,22 @@ const ResponsiveAppBar = () => {
                                 <Typography className='nav-menu' textAlign="center">
                                     <li>
                                         <Link href="/">
-                                            <a className='white-bold-text' sx={{ mx: 1, color: 'black', display: 'block' }}> Home </a>
+                                            <a sx={{ mx: 1, color: 'black', display: 'block' }}> Home </a>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/about">
-                                            <a className='white-bold-text' sx={{ mx: 1, color: 'black', display: 'block' }}> About </a>
+                                            <a sx={{ mx: 1, color: 'black', display: 'block' }}> About </a>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/contact">
-                                            <a className='white-bold-text' sx={{ mx: 1, color: 'black', display: 'block' }}> Contact </a>
+                                            <a sx={{ mx: 1, color: 'black', display: 'block' }}> Contact </a>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/blog">
-                                            <a className='white-bold-text' sx={{ mx: 1, color: 'black', display: 'block' }}> Blog </a>
+                                            <a sx={{ mx: 1, color: 'black', display: 'block' }}> Blog </a>
                                         </Link>
                                     </li>
                                 </Typography>
@@ -100,7 +100,7 @@ const ResponsiveAppBar = () => {
                     > <Image sx={{ display: { xs: 'none', md: 'none' } }} className='img-fluid'
                         src={logo} width={160} height={50} alt="logo" />
                     </Typography>
-                    <Box className='nav-menu' sx={{ ml: 5, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                    <Box sx={{ ml: 5, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         <li>
                             <Link href="/">
                                 <a className='white-bold-text' sx={{ mx: 1, color: 'white', display: 'block' }}> Home </a>
