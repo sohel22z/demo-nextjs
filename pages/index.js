@@ -16,13 +16,9 @@ function index() {
             <Container maxWidth="sm" className='triangle-left'></Container>
             <Container fixed>
                 <Box mt={8} sx={{ textAlign: 'center' }}>
-        
-                        <h1 className='bold-header-text'> Creating great IT Services & Software solutions for enterprises & startups! </h1>
-
-                    <Typography className='normal-text' variant="subtitle1" color="text.secondary" component="div" gutterBottom>
-                        A company based in Belgium, Germany. Eureca Apps strives to redefine your mobile app experience and deliver the best
-                        products in a fast pacing world with the best passionate people in our team.
-                    </Typography>
+                        <h1 className='bold-header-text' component="div" > Creating great IT Services & Software solutions for enterprises & startups! </h1>
+                        <p className='normal-text' component="div"> A company based in Belgium, Germany. Eureca Apps strives to redefine your mobile app experience and deliver the best
+                        products in a fast pacing world with the best passionate people in our team. </p>
                 </Box>
 
                 <Grid container my={2} spacing={3}>
