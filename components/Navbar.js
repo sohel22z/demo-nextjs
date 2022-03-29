@@ -32,7 +32,7 @@ const ResponsiveAppBar = () => {
 
     return (
         <AppBar position="static">
-            <Container maxWidth="xl">
+            <Container className='nav-menu' maxWidth="xl">
                 <Toolbar disableGutters>
                     <Typography
                         variant="h6"
@@ -100,7 +100,7 @@ const ResponsiveAppBar = () => {
                     > <Image sx={{ display: { xs: 'none', md: 'none' } }} className='img-fluid'
                         src={logo} width={160} height={50} alt="logo" />
                     </Typography>
-                    <Box className='nav-menu' sx={{ ml: 5, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                    <Box sx={{ ml: 5, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         <li>
                             <Link href="/">
                                 <a className='white-bold-text' sx={{ mx: 1, color: 'white', display: 'block' }}> Home </a>
