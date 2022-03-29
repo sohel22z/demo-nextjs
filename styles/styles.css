@@ -13,8 +13,8 @@ body {
 /* colors */
 :root {
   --color-blue: #94bbe9;
-  --color-blue2: #4688c8;
   --color-white: #ffff;
+  --color-black: #36454f;
 }
 
 /* font size */
@@ -54,7 +54,8 @@ body {
 }
 
 .nav-menu {
-  background: var(--color-blue);
+  background: var(--color-white);
+  colors: var(--color-black);
 }
 
 .nav-menu li {
@@ -62,15 +63,14 @@ body {
 }
 
 .nav-menu li a:hover {
-  color: var(--color-blue2);
+  color: var(--color-blue);
 }
 
 .nav-menu a {
   text-decoration: none;
   font-size: var(--font-size-18);
   font-weight: 500;
-  color: var(--color-white);
-  background: var(--color-blue);
+  color: var(--color-black);
   padding: 15px;
 }
 
@@ -82,14 +82,13 @@ body {
 @media only screen and (max-width: 600px) {
   .nav-menu {
     background: var(--color-white);
-    width: 100%;
   }
   .nav-menu a {
     padding-inline-start: 0px;
-     color: black;
+    color: var(--color-black);
     background: white;
   }
- .nav-menu li {
+  .nav-menu li {
     padding: 8px;
   }
 }
