@@ -33,7 +33,7 @@ body {
 .bold-header-text {
   color: var(--color-black3);
   font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 53px;
+  font-size: 51.2px;
   line-height: 57.6px;
   font-weight: 800;
   letter-spacing: 0;
@@ -41,7 +41,7 @@ body {
 
 .bold-text {
   color: var(--color-black);
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, Helvetica, Arial, sans-serif !important;
   font-size: 25px;
   line-height: 35px;
   font-weight: 700;
@@ -95,8 +95,58 @@ body {
   padding: 15px;
 }
 
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--color-black3);
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
 .box-size {
   min-height: 170px;
+}
+
+.round-container {
+  background: var(--color-blue);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.text-line {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  padding: 0 1px;
+  transition: color ease 0.3s;
+}
+
+.text-line::before,
+.text-line::after {
+  content: "";
+  position: absolute;
+  background: var(--color-blue);
+  z-index: -1;
+  height: 8%;
+}
+
+.text-line::before {
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  transition: width ease 0.4s;
+}
+
+.text-line:hover::before {
+  width: 100%;
+}
+
+.text-line::after {
+  left: 100%;
+  width: 0%;
+  transition: all ease 0.2s;
 }
 
 .triangle-left {
@@ -117,8 +167,8 @@ body {
 /* Media Query */
 @media only screen and (max-width: 600px) {
   .bold-header-text {
-    font-size: 35px;
-    line-height: 36.8px;
+    font-size: 2.2rem;
+    line-height: 2.3rem;
   }
 
   .nav-menu {
@@ -133,9 +183,5 @@ body {
 
   .nav-menu li {
     padding: 8px;
-  }
-
-  .triangle-left {
-    display: none;
   }
 }
